@@ -1,0 +1,21 @@
+{
+  "name": "ppx-tea-jsx",
+  "refmt": 3,
+  "sources": [
+    { "dir": "src", "type": "ppx" },
+    { "dir": "test", "type": "dev", "subdirs": true, "ppx": ["Ppx_tea_jsx"] }
+  ],
+  "ocaml-dependencies": ["compiler-libs"],
+  "entries": [
+    {
+      "backend": "native",
+      "type": "ppx",
+      "main-module": "Ppx_tea_jsx"
+    }
+  ],
+  "public": ["Ppx_tea_jsx"],
+  "warnings": {
+    "number": "+R",
+    "error": "+5+101+8+R"
+  }
+}

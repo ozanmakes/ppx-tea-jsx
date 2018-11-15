@@ -1,0 +1,33 @@
+{
+  "name": "ppx-tea-jsx",
+  "version": "0.2.0",
+  "description": "Reason JSX syntax for bucklescript-tea",
+  "license": "MIT",
+  "repository": "osener/ppx-tea-jsx",
+  "keywords": [
+    "bucklescript",
+    "bucklescript-tea",
+    "elm",
+    "reason",
+    "reasonml",
+    "jsx"
+  ],
+  "author": {
+    "name": "Ozan Sener",
+    "email": "ozan@ozansener.com",
+    "url": "github.com/osener"
+  },
+  "dependencies": {
+    "bsb-native": "^4.0.6"
+  },
+  "scripts": {
+    "build": "bsb -make-world -backend native",
+    "clean": "bsb -clean-world && rm ppx",
+    "postinstall": "bsb -make-world -backend native && cp lib/bs/native/ppx_tea_jsx.native ppx"
+  },
+  "files": [
+    "src/ppx_tea_jsx.ml",
+    " test/test.re",
+    "bsconfig.json"
+  ]
+}

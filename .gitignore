@@ -1,0 +1,9 @@
+.DS_Store
+*.log
+/node_modules
+*.cmi
+*.cmj
+*.cmt
+/lib
+*.js
+.merlin
