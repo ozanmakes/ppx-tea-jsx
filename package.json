@@ -1,6 +1,6 @@
 {
   "name": "ppx-tea-jsx",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Reason JSX syntax for bucklescript-tea",
   "license": "MIT",
   "repository": "osener/ppx-tea-jsx",
