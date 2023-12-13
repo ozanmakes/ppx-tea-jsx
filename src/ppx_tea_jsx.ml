@@ -132,6 +132,7 @@ let rec classify = function
     | "checked"
     | "contenteditable"
     | "controls"
+    | "playsInline"
     | "default"
     | "defer"
     | "hidden"
